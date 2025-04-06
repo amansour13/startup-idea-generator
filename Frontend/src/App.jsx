@@ -98,9 +98,17 @@ function App() {
             transition={{ duration: 0.5 }}
             className="flex justify-center items-center mt-6"
           >
-            <div className="w-8 h-8 border-4 border-t-4 border-indigo-600 border-solid rounded-full animate-spin"></div>
+            <div className="w-16 h-16 border-4 border-t-4 border-solid border-indigo-600 rounded-full animate-spin"
+              style={{
+                borderTopColor: '#4C51BF', // Set the top color for a dynamic spin effect
+                borderRightColor: '#38B2AC', // Set the right border color
+                borderBottomColor: '#38B2AC', // Set the bottom border color
+                borderLeftColor: '#4C51BF', // Set the left border color
+              }}
+            ></div>
           </motion.div>
         )}
+
 
         {/* Idea and Pitch */}
         {idea && (
